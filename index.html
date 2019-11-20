@@ -19,6 +19,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="moment.js"></script>
     <title>Work Day Scheduler</title>
   </head>
 
@@ -27,11 +28,62 @@
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
+      <div id="momenttd"></div>
     </header>
-    <div class="container">
-      <!-- Timeblocks go here -->
+
+    <div class="jumbotron">
+      <div id="9am">
+        09:00 am <input type="text" /><button>
+          <i class="fas fa-lock"></i>
+        </button>
+      </div>
+      <div id="10am">
+        10:00 am <input type="text" /><button>
+          <i class="fas fa-lock"></i>
+        </button>
+      </div>
+      <div id="11am">
+        11:00 am <input type="text" /><button>
+          <i class="fas fa-lock"></i>
+        </button>
+      </div>
+      <div id="12pm">
+        12:00 pm <input type="text" /><button>
+          <i class="fas fa-lock"></i>
+        </button>
+      </div>
+      <div id="1pm">
+        01:00 pm <input type="text" /><button>
+          <i class="fas fa-lock"></i>
+        </button>
+      </div>
+      <div id="2pm">
+        02:00 pm <input type="text" /><button>
+          <i class="fas fa-lock"></i>
+        </button>
+      </div>
+      <div id="3pm">
+        03:00 pm <input type="text" /><button>
+          <i class="fas fa-lock"></i>
+        </button>
+      </div>
+      <div id="4pm">
+        04:00 pm <input type="text" /><button>
+          <i class="fas fa-lock"></i>
+        </button>
+      </div>
+      <div id="5pm">
+        05:00 pm <input type="text" /><button>
+          <i class="fas fa-lock"></i>
+        </button>
+      </div>
     </div>
 
+    <script type="text/javascript">
+      var Now = moment().format("MMM Do YY");
+      var x = document.getElementById("momenttd");
+      x.innerHTML = Now;
+    </script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   </body>
