@@ -69,3 +69,28 @@ textarea {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
 }
+
+.inputArea {
+  border: solid 2px black;
+}
+
+.btn {
+  width: 150px;
+  height: 85px;
+}
+
+.textTime {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.date {
+  font-weight: bold;
+  font-size: 50px;
+  background-color: chocolate;
+}
+
+.far {
+  font-size: 50px;
+}

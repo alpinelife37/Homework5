@@ -1,5 +1,11 @@
 //! moment.js
 
+$(document).ready(function() {
+  let date = $(".date");
+  let now = moment().format("MMM Do YY");
+  date.text(now);
+});
+
 (function(global, factory) {
   typeof exports === "object" && typeof module !== "undefined"
     ? (module.exports = factory())

@@ -19,7 +19,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <script type="text/javascript" src="moment.js"></script>
+
     <title>Work Day Scheduler</title>
   </head>
 
@@ -28,63 +28,174 @@
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
-      <div id="momenttd"></div>
+      <div class="date"></div>
     </header>
 
-    <div class="jumbotron">
-      <div id="9am">
-        09:00 am <input type="text" /><button>
-          <i class="fas fa-lock"></i>
-        </button>
+    <form class="form-inline">
+      <div class="form-group mb-2">
+        <div class="textTime">--- 09:00 am ---</div>
       </div>
-      <div id="10am">
-        10:00 am <input type="text" /><button>
-          <i class="fas fa-lock"></i>
-        </button>
+      <div class="form-group inputArea">
+        <textarea
+          id="nineToDo"
+          cols="90"
+          rows="4"
+          placeholder="Your super duper important appointments here"
+        ></textarea>
       </div>
-      <div id="11am">
-        11:00 am <input type="text" /><button>
-          <i class="fas fa-lock"></i>
-        </button>
-      </div>
-      <div id="12pm">
-        12:00 pm <input type="text" /><button>
-          <i class="fas fa-lock"></i>
-        </button>
-      </div>
-      <div id="1pm">
-        01:00 pm <input type="text" /><button>
-          <i class="fas fa-lock"></i>
-        </button>
-      </div>
-      <div id="2pm">
-        02:00 pm <input type="text" /><button>
-          <i class="fas fa-lock"></i>
-        </button>
-      </div>
-      <div id="3pm">
-        03:00 pm <input type="text" /><button>
-          <i class="fas fa-lock"></i>
-        </button>
-      </div>
-      <div id="4pm">
-        04:00 pm <input type="text" /><button>
-          <i class="fas fa-lock"></i>
-        </button>
-      </div>
-      <div id="5pm">
-        05:00 pm <input type="text" /><button>
-          <i class="fas fa-lock"></i>
-        </button>
-      </div>
-    </div>
 
-    <script type="text/javascript">
-      var Now = moment().format("MMM Do YY");
-      var x = document.getElementById("momenttd");
-      x.innerHTML = Now;
-    </script>
+      <button type="button" id="submit9" class="btn btn-success btn-lg">
+        <i class="far fa-save"></i>
+      </button>
+    </form>
+
+    <form class="form-inline">
+      <div class="form-group mb-2">
+        <div class="textTime">--- 10:00 am ---</div>
+      </div>
+      <div class="form-group inputArea">
+        <textarea
+          id="tenToDo"
+          cols="90"
+          rows="4"
+          placeholder="Your super duper important appointments here"
+        ></textarea>
+      </div>
+
+      <button type="button" id="submit10" class="btn btn-success btn-lg">
+        <i class="far fa-save"></i>
+      </button>
+    </form>
+
+    <form class="form-inline">
+      <div class="form-group mb-2">
+        <div class="textTime">--- 11:00 am ---</div>
+      </div>
+      <div class="form-group inputArea">
+        <textarea
+          id="elevenToDo"
+          cols="90"
+          rows="4"
+          placeholder="Your super duper important appointments here"
+        ></textarea>
+      </div>
+
+      <button type="button" id="submit11" class="btn btn-success btn-lg">
+        <i class="far fa-save"></i>
+      </button>
+    </form>
+
+    <form class="form-inline">
+      <div class="form-group mb-2">
+        <div class="textTime">--- 12:00 pm ---</div>
+      </div>
+      <div class="form-group inputArea">
+        <textarea
+          id="twelveToDo"
+          cols="90"
+          rows="4"
+          placeholder="Your super duper important appointments here"
+        ></textarea>
+      </div>
+
+      <button type="button" id="submit12" class="btn btn-success btn-lg">
+        <i class="far fa-save"></i>
+      </button>
+    </form>
+
+    <form class="form-inline">
+      <div class="form-group mb-2">
+        <div class="textTime">--- 01:00 pm ---</div>
+      </div>
+      <div class="form-group inputArea">
+        <textarea
+          id="oneToDo"
+          cols="90"
+          rows="4"
+          placeholder="Your super duper important appointments here"
+        ></textarea>
+      </div>
+
+      <button type="button" id="submit1" class="btn btn-success btn-lg">
+        <i class="far fa-save"></i>
+      </button>
+    </form>
+
+    <form class="form-inline">
+      <div class="form-group mb-2">
+        <div class="textTime">--- 02:00 pm ---</div>
+      </div>
+      <div class="form-group inputArea">
+        <textarea
+          id="twoToDo"
+          cols="90"
+          rows="4"
+          placeholder="Your super duper important appointments here"
+        ></textarea>
+      </div>
+
+      <button type="button" id="submit2" class="btn btn-success btn-lg">
+        <i class="far fa-save"></i>
+      </button>
+    </form>
+
+    <form class="form-inline">
+      <div class="form-group mb-2">
+        <div class="textTime">--- 03:00 pm ---</div>
+      </div>
+      <div class="form-group inputArea">
+        <textarea
+          id="threeToDo"
+          cols="90"
+          rows="4"
+          placeholder="Your super duper important appointments here"
+        ></textarea>
+      </div>
+
+      <button type="button" id="submit3" class="btn btn-success btn-lg">
+        <i class="far fa-save"></i>
+      </button>
+    </form>
+
+    <form class="form-inline">
+      <div class="form-group mb-2">
+        <div class="textTime">--- 04:00 pm ---</div>
+      </div>
+      <div class="form-group inputArea">
+        <textarea
+          id="fourToDo"
+          cols="90"
+          rows="4"
+          placeholder="Your super duper important appointments here"
+        ></textarea>
+      </div>
+
+      <button type="button" id="submit4" class="btn btn-success btn-lg">
+        <i class="far fa-save"></i>
+      </button>
+    </form>
+
+    <form class="form-inline">
+      <div class="form-group mb-2">
+        <div class="textTime">--- 05:00 pm ---</div>
+      </div>
+      <div class="form-group inputArea">
+        <textarea
+          id="fiveToDo"
+          cols="90"
+          rows="4"
+          placeholder="Your super duper important appointments here"
+        ></textarea>
+      </div>
+
+      <button type="button" id="submit5" class="btn btn-success btn-lg">
+        <i class="far fa-save"></i>
+      </button>
+    </form>
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script type="text/javascript" src="moment.js"></script>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
